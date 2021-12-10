@@ -1,0 +1,52 @@
+#color-palette {
+display: inline-block;
+}
+
+
+#preta {
+background-color:black;
+border: solid;
+border-color: black;
+width: 50px;
+height: 50px;
+display: inline-block;
+border-width: 1px;
+
+
+}
+
+
+#vermelho {
+background-color: red;
+border: solid;
+border-color: black;
+width: 50px;
+height: 50px;
+display: inline-block;
+border-width: 1px;
+
+}
+
+
+#verde {
+background-color: green;
+border: solid;
+border-color: black;
+width: 50px;
+height: 50px;
+display: inline-block;
+border-width: 1px;
+
+}
+
+#azul {
+background-color: blue;
+border:solid; 
+border-color: black; 
+width: 50px;
+height: 50px;
+display: inline-block;
+border-width: 1px;
+
+
+}
