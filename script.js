@@ -3,18 +3,18 @@ function criaPaletaDeCores() {
 
     for (let i = 0; i < capturaClassColor.length; i += 1) {
         if (i === 0) {
-            capturaClassColor[i].style.backgroundColor = "black";
+            capturaClassColor[i].style.backgroundColor = "black"
         } else if (i === 1) {
-            capturaClassColor[i].style.backgroundColor = "pink";
-        } else if (i === 2) {
-            capturaClassColor[i].style.backgroundColor = "yellow";
+            capturaClassColor[i].style.backgroundColor = "pink"
+        } if (i === 2) {
+            capturaClassColor[i].style.backgroundColor = "yellow"
         } else if (i === 3) {
-            capturaClassColor[i].style.backgroundColor = "blue";
+            capturaClassColor[i].style.backgroundColor = "blue"
         }
 
     }
 }
-criaPaletaDeCores();
+criaPaletaDeCores()
 
 
 
@@ -37,3 +37,27 @@ function criaColunas() {
 }
 criaColunas()
 
+let capturaCorPaleta = document.getElementsByClassName("color")
+function escutadores() {
+    capturaCorPaleta[0].addEventListener("click", lidaComClick)
+    capturaCorPaleta[1].addEventListener("click", lidaComClick)
+    capturaCorPaleta[2].addEventListener("click", lidaComClick)
+    capturaCorPaleta[3].addEventListener("click", lidaComClick)
+}
+escutadores()
+
+function lidaComClick(event) {
+    capturaCorPaleta[0].classList.remove("selected")
+    capturaCorPaleta[1].classList.remove("selected")
+    capturaCorPaleta[2].classList.remove("selected")
+    capturaCorPaleta[3].classList.remove("selected")
+    event.target.classList = "color selected";
+}
+
+
+    let capturaClassSelected = document.getElementsByClassName('selected')
+    document.querySelectorAll(".pixel").forEach(index => {
+        index.addEventListener("click", event => {
+            event.target.style.backgroundColor = capturaClassSelected[0].style.backgroundColor 
+        })
+    })

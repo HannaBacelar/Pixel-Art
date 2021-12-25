@@ -16,6 +16,7 @@ body {
     list-style: none;
     display: inline-block;
     border:1px solid black;
+    border-radius: 50px;
 }
    
 .pixel  {
