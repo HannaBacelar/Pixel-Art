@@ -6,7 +6,7 @@ function criaPaletaDeCores() {
             capturaClassColor[i].style.backgroundColor = "black"
         } else if (i === 1) {
             capturaClassColor[i].style.backgroundColor = "pink"
-        } if (i === 2) {
+        } else if (i === 2) {
             capturaClassColor[i].style.backgroundColor = "yellow"
         } else if (i === 3) {
             capturaClassColor[i].style.backgroundColor = "blue"
@@ -54,9 +54,15 @@ function lidaComClick(event) {
     event.target.classList = "color selected";
 }
 
-
-    let capturaClassSelected = document.getElementsByClassName('selected')
+/**o forEach é uma HOF, que faz algo semelhante ao for, porém com ela consigo acessar minhas classes 'pixel' de uma forma mais simples. 
+ * o forEach está tendo a funcionalidade de percorrer cada pixel.
+ * index é cada pixel.
+ * selected é cada cor dar paleta, e ao capturar ela, está passando o valor dela para os pixels, ou seja, as cores. 
+ */
+    
+let capturaClassSelected = document.getElementsByClassName('selected')
     document.querySelectorAll(".pixel").forEach(index => {
+
         index.addEventListener("click", event => {
             event.target.style.backgroundColor = capturaClassSelected[0].style.backgroundColor 
         })
