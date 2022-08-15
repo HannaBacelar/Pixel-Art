@@ -12,4 +12,4 @@
 
 O projeto conta com uma paleta de cores funcional, onde voce pode criar desenhos em Pixels.
 
-#Projeto: 
+
